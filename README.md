@@ -61,4 +61,4 @@ O procedimento de avaliação da versão final das implementações será atrav�
 - É obrigatório que o código fonte seja desenvolvido usando o gcc/g++/javac para GNU/Linux, a fim de que haja compatibilidade com o procedimento de avaliação.
 - A submissão só estará completa se você entregar a documentação impressa e submetido o arquivo agrupado no Moodle.
 - Se você submeter o seu trabalho múltiplas vezes, apenas a última versão submetida será considerada, inclusive para efeito de desconto por atraso.
-- Programas que não compilarem ou não executarem não serão avaliados nesses quesitos.
+- Programas que não compilarem ou não executarem não serão avaliados nesses quesitos
