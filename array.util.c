@@ -34,7 +34,6 @@ void shellSort(int *a, int n)
     // sequencia para h, sendo n > 1
     while(h < n){
         h = (h * 3) + 1;
-        printf("h = %d\n", h);
     }
 
     do
@@ -59,6 +58,5 @@ void shellSort(int *a, int n)
 void readArray(int *array, int n){
     for(int i = 0; i < n; i++){
         scanf("%d", &array[i]);
-        printf("leu o elemento\n");
     }
 }

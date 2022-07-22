@@ -1,10 +1,16 @@
 CC = gcc
 CFLAGS = -Wall
-DEPS = array.util.h
-OBJ = main.o array.util.o
+LDFLAGS = 
+OBJFILES = array.util.c array.util.h main.c
+TARGET = maintest
 
-%.o: %.c $(DEPS)
-	$(CC) $(CFLAGS) -c -o $@ $<
+all: $(TARGET)
 
-main: $(OBJ)
-	gcc $(CFLAGS) -o $@ $^
+$(TARGET): $(OBJFILES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
+
+clean:
+	rm -f $(OBJFILES) $(TARGET)
+
+run: maintest
+	./maintest < teste.txt > saida.txt
