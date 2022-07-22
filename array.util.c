@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* allocateArray(int *array, long long int size){
+int* allocateArray(int *array, int size){
     array = (int*)malloc(size * sizeof(int));
     return array;
 }
@@ -11,12 +11,12 @@ void destructArray(int *array){
     free(array);
 }
 
-void printArray(int *array, long long int size){
+void printArray(int *array, int size){
     if(size == 0){
         printf("[]");
     }else{
         printf("[");
-        for (long long int i = 0; i < size - 1; i++){
+        for (int i = 0; i < size - 1; i++){
             printf("%d, ", array[i]);
         }
         printf("%d", array[size - 1]);
@@ -59,5 +59,6 @@ void shellSort(int *a, int n)
 void readArray(int *array, int n){
     for(int i = 0; i < n; i++){
         scanf("%d", &array[i]);
+        printf("leu o elemento\n");
     }
 }
