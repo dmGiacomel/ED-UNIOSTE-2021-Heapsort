@@ -24,3 +24,40 @@ void printArray(int *array, long long int size){
     }
     printf("\n");
 }
+
+void shellSort(int *a, int n)
+{
+    int i, j;
+    int h = 1;
+    int x;
+
+    // sequencia para h, sendo n > 1
+    while(h < n){
+        h = (h * 3) + 1;
+        printf("h = %d\n", h);
+    }
+
+    do
+    {
+        h /= 3;
+        for (i = h; i < n; i++)
+        {
+            x = a[i];
+            j = i;
+            while (a[j - h] > x)
+            {
+                a[j] = a[j - h];
+                j -= h;
+                if (j < h)
+                    goto L999;
+            }
+            L999: a[j] = x;
+        }
+    } while (h != 1);  
+}
+
+void readArray(int *array, int n){
+    for(int i = 0; i < n; i++){
+        scanf("%d", &array[i]);
+    }
+}
