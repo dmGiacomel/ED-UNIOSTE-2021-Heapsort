@@ -1,0 +1,53 @@
+[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3Jquantos vertices no grafo? 
+*********** Menu ***********
+1) Inserir aresta
+2) Excluir aresta
+3) Imprimir grafo
+4) Busca em profundidade
+5) Busca em largura
+100) Sair
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+grafo atual:: 
+G->V = 10
+G->A = 13
+V0:: 1 3 2 
+
+V1:: 0 6 
+
+V2:: 0 
+
+V3:: 0 4 5 
+
+V4:: 3 9 5 6 
+
+V5:: 3 4 8 
+
+V6:: 1 4 7 
+
+V7:: 6 8 
+
+V8:: 5 7 9 
+
+V9:: 4 8 
+
+
+busca em profundidade
+0 2 3 5 8 9 4 6 7 1 
+
+busca em largura
+0 1 3 2 6 4 5 7 9 8 
+
+até mais!
