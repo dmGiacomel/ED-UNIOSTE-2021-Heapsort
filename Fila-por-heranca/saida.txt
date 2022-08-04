@@ -1,0 +1,11 @@
+[2, 1, 7, 37]
+dequeued: 2
+dequeued: 1
+dequeued: 7
+dequeued: 37
+dequeued: Empty List! Returning default <datatype> 0 value...
+0
+dequeued: Empty List! Returning default <datatype> 0 value...
+0
+dequeued: 37
+[]
